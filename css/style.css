@@ -342,6 +342,7 @@ body {
 .footer-list-item {
   list-style: none;
   padding-bottom: 16px;
+  white-space: nowrap;
 }
 .list-item-first {
   padding-bottom: 13px;
@@ -480,7 +481,7 @@ body {
   .book-information {
     max-width: 464px;
     padding: 13px 0px 45px 33px;
-}
+  }
   .w-40 {
     flex-basis: 45%;
   }
@@ -565,13 +566,19 @@ body {
   .readers-faces img:nth-child(12) {
     display: none;
   }
-    .readers-avatar {
+  .readers-avatar {
     width: 166px;
     height: 166px;
   }
   .footer-content {
     max-width: 762px;
-  }  
+  }
+  .column-one {
+    margin-right: 76px;
+  }
+  .column-two {
+    margin-right: 76px;
+  }
 }
 
 /* @media (max-width: 767.98px) {  }
