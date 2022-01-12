@@ -28,7 +28,7 @@ body {
 /* -----шапка страницы----- */
 .header {
   background-color: #f1f1f1;
-  padding: 19px 0 22px 0;
+  padding: 19px 0 20px 0;
   width: 100%;
   top: 0;
   left: 0;
@@ -46,7 +46,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 6px;
-  margin-right: 32px;
+  margin-left: -7px;
+  margin-right: 33px;
 }
 .nav {
   overflow: auto;
@@ -68,7 +69,7 @@ body {
   color: inherit;
   white-space: nowrap;
   padding-top: 4px;
-  margin-right: 3px;
+  margin-right: 10px;
 }
 .login:hover {
   color: blue;
@@ -108,7 +109,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 87px 40px 95px 122px;
+  padding: 87px 44px 95px 123px;
 }
 .book-info {
   display: flex;
@@ -123,7 +124,7 @@ body {
   padding-bottom: 14px;
 }
 .w-40 {
-  flex-basis: 38%;
+  flex-basis: 37.51%;
 }
 .w-60 {
   flex-basis: 62%;
@@ -153,7 +154,6 @@ body {
   font-size: 55px;
   font-weight: 400;
   line-height: 36px;
-  flex-basis: 38%;
 }
 .book-price-tag {
   display: flex;
@@ -177,11 +177,10 @@ body {
 .buttons {
   display: flex;
   justify-content: space-between;
+  width: 521px;
+  padding-left: 1px;
 }
 .button {
-  width: 250px;
-  height: 60px;
-  padding: 16px 50px;
   border-radius: 5px;
   border: 2px solid #f89c02;
   font-size: 16px;
@@ -189,11 +188,13 @@ body {
   text-align: center;
 }
 .read {
+  padding: 18px 57px;
   background-color: #f89c02;
   color: #ffffff;
   cursor: pointer; /* палец вместо курсора мышки */
 }
 .buy {
+  padding: 18px 67px;
   display: inline-block; /* работают ширина и высота, указанные в button */
   text-decoration: none;
   color: #f89c02;
@@ -202,7 +203,7 @@ body {
 /* -----Секция about----- */
 .about {
   width: 100%;
-  padding: 91px 0 96px 0;
+  padding: 92px 0 71px 0;
   background-color: #f1f1f1;
 }
 .about-content {
@@ -220,7 +221,7 @@ body {
 .about-annotation {
   max-width: 455px;
   margin-right: 129px;
-  margin-left: -6px;
+  margin-left: -15px;
 }
 .about-text {
   line-height: 24px;
@@ -233,6 +234,9 @@ body {
 }
 .about-text-two {
   max-height: 168px;
+}
+.about-text-three {
+  color: rgba(0, 0, 0, 0);
 }
 .about-autor {
   align-self: flex-start;
@@ -281,10 +285,10 @@ body {
 /* -----Секция readers----- */
 .readers {
   width: 100%;
-  padding: 83px 0 108px 0;
+  padding: 81px 0 108px 0;
 }
 .readers-content {
-  max-width: 1140px;
+  max-width: 1141px;
   display: flex;
   margin: auto; /* посередине относительно шапки */
   flex-direction: column;
@@ -294,6 +298,7 @@ body {
   font-weight: 700;
   margin: 0;
   margin-bottom: 50px;
+  margin-left: -7px;
 }
 .readers-faces {
   height: 361px;
@@ -316,7 +321,7 @@ body {
   margin-left: 3px;
 }
 .footer-content {
-  max-width: 1140px;
+  max-width: 1151px;
   display: flex;
   margin: auto; /* посередине относительно шапки */
   justify-content: flex-start;
@@ -348,7 +353,7 @@ body {
   padding-bottom: 13px;
 }
 .list-item-second {
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 .footer-target {
   text-decoration: none;
@@ -370,13 +375,14 @@ body {
 /* ------------------------------------------------------- */
 @media (max-width: 1200px) {
   .header {
-    padding: 15px 0 22px 0;
+    padding: 15px 0 18px 0;
   }
   .header-content {
     max-width: 960px;
   }
   .logo {
     margin-right: 26px;
+    margin-left: 0;
   }
   .login {
     margin-right: 0;
@@ -398,6 +404,9 @@ body {
     max-width: 570px;
     padding: 40px 25px 91px 29px;
   }
+  .w-40 {
+    flex-basis: 38%;
+  }
   /* -----Секция about----- */
   .about {
     padding: 93px 0 96px 0;
@@ -410,12 +419,16 @@ body {
     margin-right: 52px;
     margin-left: -10px;
   }
+  .about-text-three {
+    display: none;
+  }
   /* -----Секция readers----- */
   .readers {
     padding: 65px 0 94px 0;
   }
   .readers-title {
     margin-bottom: 48px;
+    margin-left: 0;
   }
   .readers-content {
     max-width: 960px;
@@ -454,7 +467,7 @@ body {
     max-width: 762px;
   }
   .nav {
-    visibility: hidden;
+    display: none;
   }
   .logo {
     padding-top: 9px;
@@ -507,10 +520,13 @@ body {
     max-width: 414px;
   }
   .button {
-    width: 200px;
-    height: 49px;
     font-size: 14px;
+  }
+  .read {
     padding: 14px 38px;
+  }
+  .buy {
+    padding: 14px 50px;
   }
   .about {
     padding: 76px 0 84px 0;
@@ -528,6 +544,10 @@ body {
     margin-left: 2px;
     margin-right: 0;
     margin-bottom: 35px;
+  }
+  .about-text-three {
+    color: inherit;
+    display: inherit;
   }
   .about-autor {
     padding: 66px 75px 80px 54px;
@@ -579,18 +599,11 @@ body {
 }
 /* ------------------------------------------------------- */
 @media (max-width: 768px) {
-  .header {
-    padding: 15px 0 6px 0;
-  }
   .header-content {
     max-width: 560px;
   }
   .login {
     padding-top: 6px;
-  }
-  .book {
-    padding: 58px 0 53px 0;
-    margin-top: 60px;
   }
   .book {
     padding: 39px 0 34px 0;
@@ -604,7 +617,6 @@ body {
     width: 560px;
   }
   .book-information {
-    /* max-width: 464px; */
     padding: 57px 0px 45px 0px;
   }
   .w-40 {
@@ -615,6 +627,12 @@ body {
   }
   .book-price {
     flex-basis: 43%;
+  }
+  .read {
+    padding: 14px 40px;
+  }
+  .buy {
+    padding: 14px 48px;
   }
   .about {
     padding: 76px 0 88px 0;
@@ -630,7 +648,7 @@ body {
     padding: 66px 75px 83px 50px;
   }
   .readers {
-    padding: 75px 0 83px 0;
+    padding: 77px 0 83px 0;
   }
   .readers-content {
     max-width: 560px;
@@ -651,13 +669,113 @@ body {
   .column-two {
     margin-right: 0;
   }
-  .list-item-third {  
-    padding-bottom: 38px;
+  .list-item-third {
+    padding-bottom: 35px;
   }
 }
+/* ------------------------------------------------------- */
+@media (max-width: 576px) {
+  .header-content {
+    max-width: 480px;
+  }
+  .logo {
+    padding-top: 6px;
+  }
+  .login {
+    padding-top: 5px;
+  }
+  .book-content {
+    max-width: 480px;
+  }
+  .book-cover {
+    width: 480px;
+  }
+  .book-information {
+    padding: 51px 0px 32px 1px;
+  }
+  .book-autor {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .book-name {
+    font-size: 36px;
+    margin-bottom: 14px;
+  }
+  .book-annotation {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 290px;
+    margin-bottom: 28px;
+  }
+  .book-info {
+    flex-direction: column;
+  }
+  .book-info li:nth-child(2) {
+    order: 3;
+  }
+  .book-info li:nth-child(4) {
+    order: 3;
+  }
+  .book-info-element {
+    padding-bottom: 15px;
+  }
+  .book-price {
+    flex-basis: 35%;
+  }
+  .book-price-tag {
+    margin-bottom: 41px;
+  }
+  .book-favorite {
+    color: rgba(0, 0, 0, 0);
+  }
+  .buttons {
+    max-width: 481px;
+    margin-left: -1px;
+    flex-wrap: wrap;
+  }
+  .button {
+    font-size: 16px;
+  }
+  .read {
+    padding: 26px 171px;
+    margin-bottom: 24px;
+  }
+  .buy {
+    padding: 26px 182px;
+  }
+  .about-content {
+    max-width: 480px;
+  }
+  .about {
+    padding: 55px 0 88px 0;
+  }
+  .about-title {
+    margin-bottom: 25px;
+  }
+  .about-autor-avatar {
+    width: 66px;
+    height: 66px;
+    margin-right: 16px;
+  }
+  .about-autor {
+    padding: 54px 75px 55px 41px;
+  }
+  .about-autor-name {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+  .about-autor-present {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
-/* @media (max-width: 575.98px) {  }
 
-@media (max-width: 479.98px) {  }
+  .readers-content {
+    max-width: 480px;
+  }
+
+}
+
+/*@media (max-width: 479.98px) {  }
 
 @media (max-width: 319.98px) {  } */
