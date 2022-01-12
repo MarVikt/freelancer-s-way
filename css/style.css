@@ -307,6 +307,9 @@ body {
   justify-content: space-between;
   align-content: space-between;
 }
+.clone {
+  display: none;
+}
 .readers-avatar {
   width: 166px;
   height: 166px;
@@ -455,6 +458,9 @@ body {
   }
   .footer-title {
     margin-bottom: 25px;
+  }
+  .to-up {
+    display: none;
   }
 }
 
@@ -808,7 +814,6 @@ body {
   }
 }
 /* ------------------------------------------------------- */
-
 @media (max-width: 480px) {
   .header-content {
     max-width: 320px;
@@ -838,9 +843,8 @@ body {
   .about-content {
     max-width: 320px;
   }
-  .about-text-one { 
+  .about-text-one {
     max-height: 96px;
- 
   }
   .about-text-two {
     max-height: 192px;
@@ -848,8 +852,7 @@ body {
   .about-autor-present {
     max-height: 96px;
   }
-  
-    .readers-content {
+  .readers-content {
     max-width: 320px;
   }
   .readers-faces img:nth-child(3) {
@@ -858,10 +861,110 @@ body {
   .readers-faces img:nth-child(9) {
     display: none;
   }
-
   .footer-content {
     max-width: 320px;
   }
 }
-
-/*@media (max-width: 319.98px) {  } */
+/* ------------------------------------------------------- */
+@media (max-width: 320px) {  
+  .header-content {
+    max-width: 265px;
+  }
+  .book {
+    padding: 46px 0 29px 0;
+  }
+    .book-content {
+    max-width: 265px;
+  }
+  .book-cover {
+    width: 265px;
+  }
+  .book-information {
+    padding: 36px 0px 32px 1px;
+  }
+  
+  .book-autor {
+    font-size: 16px;
+  }
+  .book-name {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+  .book-annotation {
+    font-size: 18px;
+    margin-bottom: 31px;
+  }
+  .w-40 {
+    flex-basis: 61%;
+  }
+  .book-price-tag {
+    margin-bottom: 40px;
+  }
+  .book-info {
+    font-size: 14px;
+  }
+  .buttons {
+    max-width: 265px;
+  }
+  .read {
+    padding: 18px 63px;
+    margin-bottom: 17px;
+  }
+  .buy {
+    padding: 18px 74px;
+  }
+  .about {
+    padding: 55px 0 54px 0;
+  }
+  .about-content {
+    max-width: 265px;
+  }
+  .about-text-two {
+    max-height: 240px;
+  }
+  .about-text-three {
+    display: none;
+  }
+  .about-annotation {
+    margin-bottom: 22px;
+  }
+  .about-autor {
+    padding: 31px 19px 44px 19px;
+  }
+  .about-autor-avatar {
+    margin-right: 12px;
+  }
+  .readers {
+    padding: 55px 0 58px 0;
+  }
+  .readers-content {
+    max-width: 265px;
+  }
+  .readers-title {
+    padding-left: 0;
+    margin-bottom: 33px;
+  }
+.readers-avatar {
+    width: 125px;
+    height: 125px;
+  }
+  .readers-faces {
+    height: 265px;
+    padding-left: 0;
+  }
+  .readers-faces img:nth-child(2) {
+    display: none;
+  }
+  .readers-faces img:nth-child(7) {
+    display: none;
+  }
+  .readers-faces img:nth-child(8) {
+    display: none;
+  }
+  .clone {
+    display: block;
+  }
+  .footer-content {
+    max-width: 265px;
+  }
+}
