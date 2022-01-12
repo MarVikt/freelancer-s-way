@@ -66,6 +66,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   color: inherit;
+  white-space: nowrap;
   padding-top: 4px;
   margin-right: 3px;
 }
@@ -89,8 +90,6 @@ body {
   position: relative;
 }
 .book-discount {
-  /* width: 135px;
-  height: 41px; */
   font-family: "Roboto", sans-serif;
   padding: 11px 16px;
   color: #ffffff;
@@ -100,6 +99,7 @@ body {
   position: absolute;
   right: 0;
   top: 21px;
+  display: none;
 }
 .book-name {
   font-family: "MuseoCyrl-900", sans-serif;
@@ -475,9 +475,6 @@ body {
   .book-cover {
     width: 298px;
   }
-  .book-discount {
-    visibility: hidden;
-  }
   .book-information {
     max-width: 464px;
     padding: 13px 0px 45px 33px;
@@ -580,10 +577,86 @@ body {
     margin-right: 76px;
   }
 }
+/* ------------------------------------------------------- */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0 6px 0;
+  }
+  .header-content {
+    max-width: 560px;
+  }
+  .login {
+    padding-top: 6px;
+  }
+  .book {
+    padding: 58px 0 53px 0;
+    margin-top: 60px;
+  }
+  .book {
+    padding: 39px 0 34px 0;
+    margin-top: 60px;
+  }
+  .book-content {
+    max-width: 560px;
+    flex-direction: column;
+  }
+  .book-cover {
+    width: 560px;
+  }
+  .book-information {
+    /* max-width: 464px; */
+    padding: 57px 0px 45px 0px;
+  }
+  .w-40 {
+    flex-basis: 43%;
+  }
+  .w-60 {
+    flex-basis: 57%;
+  }
+  .book-price {
+    flex-basis: 43%;
+  }
+  .about {
+    padding: 76px 0 88px 0;
+  }
+  .about-content {
+    max-width: 560px;
+    flex-direction: column;
+  }
+  .about-annotation {
+    margin-bottom: 43px;
+  }
+  .about-autor {
+    padding: 66px 75px 83px 50px;
+  }
+  .readers {
+    padding: 75px 0 83px 0;
+  }
+  .readers-content {
+    max-width: 560px;
+  }
+  .readers-faces {
+    padding-right: 0;
+  }
+  .readers-faces img:nth-child(4) {
+    display: none;
+  }
+  .readers-faces img:nth-child(10) {
+    display: none;
+  }
+  .footer-content {
+    max-width: 560px;
+    flex-wrap: wrap;
+  }
+  .column-two {
+    margin-right: 0;
+  }
+  .list-item-third {  
+    padding-bottom: 38px;
+  }
+}
 
-/* @media (max-width: 767.98px) {  }
-
-@media (max-width: 575.98px) {  }
+/* @media (max-width: 575.98px) {  }
 
 @media (max-width: 479.98px) {  }
 
