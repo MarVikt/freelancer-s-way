@@ -747,10 +747,13 @@ body {
     max-width: 480px;
   }
   .about {
-    padding: 55px 0 88px 0;
+    padding: 55px 0 98px 0;
   }
   .about-title {
     margin-bottom: 25px;
+  }
+  .about-autor-info {
+    margin-bottom: 21px;
   }
   .about-autor-avatar {
     width: 66px;
@@ -758,21 +761,55 @@ body {
     margin-right: 16px;
   }
   .about-autor {
-    padding: 54px 75px 55px 41px;
+    padding: 54px 75px 64px 41px;
   }
   .about-autor-name {
     margin-top: 9px;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
   .about-autor-present {
     font-size: 14px;
     line-height: 20px;
+    padding-left: 4px;
   }
-
-
+  .about-autor-ref {
+    font-size: 14px;
+  }
+  .abs-way-ref {
+    display: none;
+  }
+  .readers {
+    padding: 50px 0 71px 0;
+  }
   .readers-content {
     max-width: 480px;
   }
+  .readers-title {
+    margin-bottom: 39px;
+  }
+  .readers-avatar {
+    width: 144px;
+    height: 144px;
+  }
+  .readers-faces {
+    height: 309px;
+  }
+  .footer-content {
+    max-width: 480px;
+  }
+  .column-two {
+    margin-right: 95px;
+  }
+  .footer-title {
+    margin-bottom: 26px;
+  }
+  .list-item-second {
+    padding-bottom: 10px;
+  }
+  .list-item-third {
+    padding-bottom: 14px;
+  }
+
 
 }
 
